@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %} {%endblock %} </title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        header {
+            background-color: green;
+            color: white;
+            padding: 10px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            background-color: white;
+            padding: 8px 16px;
+            color: black;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+    {% block style %} {% endblock %}
+</head>
+
+<body>
+    <header>
+        <h1>Hello Header</h1>
+
+
+    </header>
+
+    {% comment %} yeslea chai backend haru ko kam hnxa yesma and ani yesko lea aru ko defalt tarikala linxa {% block %}{% endblock %} {% endcomment %} {% block content %} {% endblock %}
+
+</body>
+
+</html>
