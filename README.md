@@ -1,3 +1,6 @@
 #Run Locally
 </br>
-python manage.py runserver
+1. git clone
+2. cd myapp
+3.python manage.py runserver
+
