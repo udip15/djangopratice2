@@ -24,3 +24,6 @@ def about(request):
 
 def contact(request):
     return  render(request,'contact.html')
+
+def ourmerch(request):
+    return  render(request,'ourmerch.html')
