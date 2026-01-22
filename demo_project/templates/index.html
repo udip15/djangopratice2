@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+{% comment %} <!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -340,4 +340,47 @@
 
 </html> -->
 
-{% extends "base.html" %}
+{% extends "base.html" %} {% endcomment %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KICX | Home</title>
+    <style>
+        body { margin:0; font-family: Arial, sans-serif; background:#f5f5f5; }
+        header { background:#000; color:white; padding:15px 40px; display:flex; justify-content:space-between; align-items:center; }
+        .logo { font-size:28px; font-weight:bold; letter-spacing:2px; }
+        nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+        nav a:hover { color:#ff4d00; }
+        .hero { padding:80px 40px; text-align:center; background:white; }
+        .hero h1 { font-size:48px; margin-bottom:10px; }
+        .hero p { font-size:18px; color:#555; }
+        .btn { background:#ff4d00; color:white; padding:12px 25px; text-decoration:none; border-radius:5px; display:inline-block; margin-top:20px; }
+        .btn:hover { background:#e84300; }
+        footer { background:#000; color:white; text-align:center; padding:15px; margin-top:50px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">KICX</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="ourmerch.html">Our Merch</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Step Into Style with KICX</h1>
+    <p>Premium streetwear & sneaker culture inspired fashion</p>
+    <a href="ourmerch.html" class="btn">Shop Now</a>
+</section>
+
+<footer>
+    © 2026 KICX. All Rights Reserved.
+</footer>
+
+</body>
+</html>
