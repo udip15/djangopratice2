@@ -36,6 +36,16 @@
         Our mission is to empower the next generation with fashion that speaks
         attitude, comfort, and originality.
     </p>
+
+
+    <form action="/submit" method="post">
+            {% csrf_token %}
+            <input name="name" placeholder="Ram">
+            <input name="email" placeholder="abc@gmail.com">
+            <input name="contact" placeholder="99898989">
+            <input name="address" placeholder="ctwn">
+            <input type="submit" value="Save">
+    </form>
 </div>
 
 <footer>
